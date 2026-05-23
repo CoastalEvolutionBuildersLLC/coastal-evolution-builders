@@ -1,0 +1,130 @@
+/* ============================================================
+   COASTAL EVOLUTION BUILDERS — responsive.css
+   ============================================================ */
+
+/* ---- Tablet: 1024px and below ---- */
+@media (max-width: 1024px) {
+
+  :root { --nav-h: 66px; }
+
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .portfolio-grid-preview { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-card:first-child { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 16/7; }
+  .portfolio-card:first-child .portfolio-card-placeholder { min-height: 260px; }
+
+  .why-grid { gap: 40px; }
+
+  .testimonials-grid { grid-template-columns: 1fr 1fr; }
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+
+  /* About */
+  .about-story-grid { gap: 40px; }
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid .team-card:last-child { grid-column: 1 / -1; max-width: 360px; margin: 0 auto; }
+  .service-area { flex-direction: column; gap: 32px; }
+  .service-area-map { width: 100%; }
+
+  /* Services */
+  .services-full-grid { grid-template-columns: 1fr; }
+  .service-full-card:first-child { grid-template-columns: 1fr; gap: 24px; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .process-steps::before { display: none; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .contact-form-wrap { padding: 36px; }
+
+  /* Portfolio */
+  .masonry-grid { column-count: 2; }
+  .lightbox-prev { left: -10px; }
+  .lightbox-next { right: -10px; }
+}
+
+/* ---- Mobile: 768px and below ---- */
+@media (max-width: 768px) {
+
+  :root { --nav-h: 60px; }
+
+  section { padding: 72px 0; }
+
+  /* Nav */
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-drawer { display: flex; }
+
+  /* Hero */
+  .hero-stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; }
+
+  /* Portfolio preview */
+  .portfolio-grid-preview { grid-template-columns: 1fr; }
+  .portfolio-card:first-child { aspect-ratio: 16/9; }
+
+  /* Why */
+  .why-grid { grid-template-columns: 1fr; }
+  .why-visual { order: -1; }
+  .why-visual-accent { width: 45%; bottom: -16px; right: -10px; }
+  .why-experience-badge { top: 16px; left: -10px; padding: 12px 14px; }
+  .why-exp-num { font-size: 22px; }
+
+  /* Testimonials */
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonials-grid .testimonial-card:last-child { grid-column: auto; max-width: 100%; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Page hero */
+  .page-hero { padding: 120px 0 60px; }
+
+  /* About */
+  .about-story-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .team-grid .team-card:last-child { grid-column: auto; max-width: 100%; }
+  .service-area { padding: 32px 20px; }
+  .service-area-list { grid-template-columns: 1fr; }
+
+  /* Services page */
+  .process-steps { grid-template-columns: 1fr; }
+
+  /* Portfolio */
+  .masonry-grid { column-count: 1; }
+  .portfolio-filters { gap: 8px; }
+  .filter-btn { font-size: 11px; padding: 8px 16px; }
+  .lightbox-prev, .lightbox-next { display: none; }
+  .lightbox { padding: 14px; }
+
+  /* Contact */
+  .contact-form-wrap { padding: 24px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+
+  /* CTA */
+  .cta-actions { flex-direction: column; align-items: center; }
+  .cta-actions .btn { width: 100%; max-width: 320px; justify-content: center; }
+}
+
+/* ---- Small mobile: 480px ---- */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero-title { font-size: 28px; }
+  .service-full-card { padding: 28px 22px; }
+  .why-visual-accent { display: none; }
+}
