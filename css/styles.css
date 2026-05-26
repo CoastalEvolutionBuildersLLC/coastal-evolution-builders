@@ -185,6 +185,40 @@ section { padding: 96px 0; }
 }
 
 /* Logo */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.site-logo__image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.site-logo__name {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.site-logo__location {
+  font-size: 0.85rem;
+  margin-top: 2px;
+  color: inherit;
+  opacity: 0.8;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
